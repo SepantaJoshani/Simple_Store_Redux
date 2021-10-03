@@ -6,6 +6,7 @@ import Products from "./pages/Products";
 import NotFounded from './pages/NotFounded'
 import Layout from "./components/Layout/Layout";
 import ScrollToTop from "./components/ScrollToTop";
+import Contact from "./pages/Contact";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/products" component={Products} exact />
         <Route path="/products/:productId" component={ProductInfo} />
         <Route path="/cart" component={Cart} />
+        <Route path="/contact" component={Contact} />
         <Route path="*" component={NotFounded} />
       </Switch>
     </Layout>

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import LoremIpsum from "react-lorem-ipsum";
 import ProductItem from "../components/ProductsItem/ProductItem";
 import products from "../products";
+import Stats from '../components/stats/Stats'
 const Products = () => {
   return (
    <Fragment>
@@ -19,6 +19,7 @@ const Products = () => {
         ))}
       </div>
     </section>
+    <Stats />
    </Fragment>
   );
 };

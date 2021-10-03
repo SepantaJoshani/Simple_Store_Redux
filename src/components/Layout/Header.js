@@ -22,8 +22,8 @@ const Header = () => {
             <NavLink className="hover:text-white" to="/products">
               Shop
             </NavLink>
-            <NavLink className="hover:text-white" to="/products">
-              About
+            <NavLink className="hover:text-white" to="/contact">
+              Contact
             </NavLink>
           </div>
         </div>
@@ -34,7 +34,7 @@ const Header = () => {
           </div>
         </div>
         <div className="flex items-center space-x-1">
-          <NavLink to="/">
+          <NavLink to="/contact">
             <UserIcon />
           </NavLink>
           <NavLink to="/cart">
@@ -51,9 +51,9 @@ const Header = () => {
         </NavLink>
         <NavLink
           className="block p-2 rounded-md hover:bg-blue-300"
-          to="/products"
+          to="/contact"
         >
-          About
+          Contact
         </NavLink>
       </div>
     </header>
