@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Products = () => {
-    return (
-        <h1>
-           Products 
-        </h1>
-    )
-}
+  return (
+    <section className="mt-5 text-center">
+      <h1>Products</h1>
+    </section>
+  );
+};
 
-export default Products
+export default Products;

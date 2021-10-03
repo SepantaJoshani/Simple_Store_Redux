@@ -4,10 +4,12 @@ import Cart from "./pages/Cart";
 import ProductInfo from "./pages/ProductInfo";
 import Products from "./pages/Products";
 import NotFounded from './pages/NotFounded'
+import Layout from "./components/Layout/Layout";
+
 
 function App() {
   return (
-    <div className="App">
+    <Layout>
       <Switch>
         <Route path="/" exact>
           <Redirect to="/products" />
@@ -17,7 +19,7 @@ function App() {
         <Route path="/cart" component={Cart} />
         <Route path="*" component={NotFounded} />
       </Switch>
-    </div>
+    </Layout>
   );
 }
 

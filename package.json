@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.3.0",
+    "@headlessui/react": "^1.4.1",
     "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -44,6 +45,7 @@
   "devDependencies": {
     "autoprefixer": "^9.8.7",
     "postcss": "^7.0.38",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16",
+    "tailwindcss-debug-screens": "^2.1.0"
   }
 }
