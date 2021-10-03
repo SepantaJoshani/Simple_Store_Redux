@@ -1,19 +1,21 @@
 import React from "react";
-import FavoriteIcon from "../components/Icons/FavoriteIcon";
 import MinusIcon from "../components/Icons/MinusIcon";
 import PlusIcon from "../components/Icons/PlusIcon";
 import RemoveIcon from "../components/Icons/RemoveIcon";
+import { Link } from "react-router-dom";
 
 const CartItem = ({name,image,price}) => {
   return (
     
         <li className="flex flex-col py-6 sm:flex-row sm:justify-between">
           <div className="flex w-full space-x-2 sm:space-x-4 md:w-8/12 md:mx-auto">
-            <img
+          <Link to="/">
+          <img
               className="flex-shrink-0 object-cover w-20 h-20 rounded outline-none dark:border-transparent sm:w-32 sm:h-32 dark:bg-coolGray-500"
                 src={image}
               alt="Polaroid camera"
             />
+            </Link>
             <div className="flex flex-col justify-between w-full pb-4">
               <div className="flex justify-between w-full pb-2 space-x-2">
                 <div className="space-y-1">

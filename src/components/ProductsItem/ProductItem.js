@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProductItem = ({ name, description, price, image }) => {
   return (
@@ -12,7 +13,7 @@ const ProductItem = ({ name, description, price, image }) => {
         </p>
       </div>
 
-      <img className="object-cover w-full mt-2 mb-6 " src={image} alt="NIKE AIR" />
+     <Link to='/'> <img className="object-cover w-full mt-2 mb-6 " src={image} alt="NIKE AIR" /></Link>
 
       <div className="absolute bottom-0 flex items-center justify-between w-full px-4 py-2 bg-gray-900 ">
         <h1 className="text-lg font-bold text-white">${price}</h1>
