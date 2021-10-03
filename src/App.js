@@ -5,11 +5,13 @@ import ProductInfo from "./pages/ProductInfo";
 import Products from "./pages/Products";
 import NotFounded from './pages/NotFounded'
 import Layout from "./components/Layout/Layout";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   return (
     <Layout>
+      <ScrollToTop />
       <Switch>
         <Route path="/" exact>
           <Redirect to="/products" />
