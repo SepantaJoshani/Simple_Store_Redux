@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import CartIcon from "../Icons/CartIcon";
 import CloseIcon from "../Icons/CloseIcon";
 import MenuItem from "../Icons/MenuItem";
@@ -28,17 +28,26 @@ const Header = () => {
           </div>
         </div>
         <div>
-          <div className="flex items-center space-x-1">
-            <ShoppingBag />
-            <h1 className="text-xl">Store</h1>
-          </div>
+          <Link to="products">
+            <div className="flex items-center space-x-1">
+              <ShoppingBag />
+              <h1 className="text-xl">Store</h1>
+            </div>
+          </Link>
         </div>
         <div className="flex items-center space-x-1">
           <NavLink to="/contact">
             <UserIcon />
           </NavLink>
           <NavLink to="/cart">
-            <CartIcon />
+            <div className="relative px-5 py-2">
+              <div className="z-0 ">
+                <CartIcon />
+              </div>
+              <span class="inline-flex items-center justify-center px-2 py-1  text-xs font-bold leading-none text-gray-600 bg-white rounded-full absolute top-1 bottom-6 right-2 z-100">
+                9
+              </span>
+            </div>
           </NavLink>
         </div>
       </div>

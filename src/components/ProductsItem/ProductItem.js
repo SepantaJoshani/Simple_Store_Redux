@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ProductItem = ({ name, description, price, image }) => {
+const ProductItem = ({ name, description, price, image,id }) => {
   return (
-    <div className="relative max-w-xs mx-auto overflow-auto bg-white rounded-lg shadow-lg dark:bg-gray-800">
-      <div className="px-4 py-2">
+    <div className="relative max-w-xs mx-auto overflow-auto bg-white rounded-lg shadow-lg hover:opacity-80 dark:bg-gray-800">
+      <div className="px-4 py-2 ">
         <h1 className="text-3xl font-bold text-gray-800 uppercase dark:text-white">
           {name}
         </h1>
@@ -13,7 +13,7 @@ const ProductItem = ({ name, description, price, image }) => {
         </p>
       </div>
 
-     <Link to='/'> <img className="object-cover w-full mt-2 mb-6 " src={image} alt="NIKE AIR" /></Link>
+     <Link to={`/products/${id}`}> <img className="object-cover w-full mt-2 mb-6 " src={image} alt="NIKE AIR" /></Link>
 
       <div className="absolute bottom-0 flex items-center justify-between w-full px-4 py-2 bg-gray-900 ">
         <h1 className="text-lg font-bold text-white">${price}</h1>

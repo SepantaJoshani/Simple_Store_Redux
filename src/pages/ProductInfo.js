@@ -1,12 +1,25 @@
-import React from 'react'
-
+import React, { Fragment } from "react";
+import { Route, useRouteMatch } from "react-router";
+import ProductDetail from "../components/ProductDetail.js/ProductDetail";
+import products from "../products";
 const ProductInfo = () => {
-    return (
-        <h1>
-           ProductInfo
- 
-        </h1>
-    )
-}
+    const match = useRouteMatch();
+   
 
-export default ProductInfo
+  const product = products.find((item) => item.id === match.params.productId);
+
+  console.log(match.params.productId);
+
+  return (
+    <Fragment>
+      <ProductDetail
+        name={product.name}
+        price={product.price}
+        description={product.description}
+        image={product.image}
+      />
+    </Fragment>
+  );
+};
+
+export default ProductInfo;

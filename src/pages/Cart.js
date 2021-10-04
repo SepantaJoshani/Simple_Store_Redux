@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import { Route } from 'react-router'
 import CartItem from '../CartItem/CartItem'
+import InstaIcon from '../components/Icons/InstaIcon'
 import products from '../products'
 
 const Cart = () => {
     
     return (
+        <Fragment>
         <div className="flex flex-col p-6 space-y-4 sm:p-10 dark:bg-coolGray-900 dark:text-coolGray-100">
       <h2 className="text-xl font-semibold">Your cart</h2>
       <ul className="flex flex-col divide-y divide-coolGray-700">
@@ -29,6 +32,10 @@ const Cart = () => {
 		</button>
 	</div>
     </div>
+    
+          
+    </Fragment>
+
     )
 }
 

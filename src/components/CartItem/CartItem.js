@@ -1,7 +1,7 @@
 import React from "react";
-import MinusIcon from "../components/Icons/MinusIcon";
-import PlusIcon from "../components/Icons/PlusIcon";
-import RemoveIcon from "../components/Icons/RemoveIcon";
+import MinusIcon from "../Icons/MinusIcon";
+import PlusIcon from "../Icons/PlusIcon";
+import RemoveIcon from "../Icons/RemoveIcon";
 import { Link } from "react-router-dom";
 
 const CartItem = ({name,image,price}) => {
