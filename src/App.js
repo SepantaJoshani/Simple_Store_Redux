@@ -7,6 +7,7 @@ import NotFounded from './pages/NotFounded'
 import Layout from "./components/Layout/Layout";
 import ScrollToTop from "./components/ScrollToTop";
 import Contact from "./pages/Contact";
+import Checkout from "./pages/Checkout";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/products/:productId" component={ProductInfo} />
         <Route path="/cart" component={Cart} exact />
         <Route path="/contact" component={Contact} />
+        <Route path="/checkout" component={Checkout} />
         <Route path="*" component={NotFounded} />
       </Switch>
     </Layout>
