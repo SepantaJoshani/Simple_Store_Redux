@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import CartIcon from "../Icons/CartIcon";
 import CloseIcon from "../Icons/CloseIcon";
+import LogoutIcon from "../Icons/LogoutIcon";
 import MenuItem from "../Icons/MenuItem";
 import ShoppingBag from "../Icons/ShoppingBag";
 import UserIcon from "../Icons/UserIcon";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const toggleHandler = () => {
     setIsOpen((prevState) => !prevState);
   };

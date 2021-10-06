@@ -74,7 +74,7 @@ const ProductDetail = ({name,description,price,image}) => {
               </div>
               <div className="flex">
                 <span className="text-2xl font-medium text-gray-900 title-font">${priceItem}</span>
-                <button className="flex flex-shrink px-6 py-2 ml-auto text-white bg-blue-400 border-0 rounded focus:outline-none md:px-12 ">Button</button>
+                <button className="flex flex-shrink px-6 py-2 ml-auto text-white bg-blue-400 border-0 rounded focus:outline-none md:px-12 ">Add </button>
                
               </div>
             </div>

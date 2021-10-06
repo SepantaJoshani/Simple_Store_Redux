@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import { Route } from 'react-router'
-import CartItem from '../CartItem/CartItem'
+import CartItem from '../components/CartItem/CartItem'
 import InstaIcon from '../components/Icons/InstaIcon'
 import products from '../products'
 

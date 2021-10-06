@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const ProductItem = ({ name, description, price, image,id }) => {
+
+  
   return (
     <div className="relative max-w-xs mx-auto overflow-auto bg-white rounded-lg shadow-lg hover:opacity-80 dark:bg-gray-800">
       <div className="px-4 py-2 ">
