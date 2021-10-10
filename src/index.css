@@ -1,13 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 *{
     margin: 0;
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+@layer base {
+    
+    
+    textarea{
+        @apply resize-none
+    }
 
-textarea{
-    resize: none;
+    input{
+        @apply outline-none 
+    }
 }
