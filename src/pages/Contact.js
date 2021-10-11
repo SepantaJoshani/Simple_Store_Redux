@@ -1,7 +1,9 @@
 import React from 'react'
+import ContactForm from '../components/Forms/ContactForm/ContactForm'
 import LocationIcon from '../components/Icons/LocationIcon'
 import MailIcon from '../components/Icons/MailIcon'
 import PhoneIcon from '../components/Icons/PhoneIcon'
+
 
 const Contact = () => {
     return (
@@ -25,21 +27,22 @@ const Contact = () => {
 				</p>
 			</div>
 		</div>
-		<form novalidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid focus:outline-none">
+		{/* <form novalidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid focus:outline-none">
 			<label className="block">
 				<span className="mb-1">Full name</span>
-				<input name='name' type="text" placeholder="Enter Your Name" className="block w-full rounded-md shadow-md outline-none dark:bg-coolGray-800"required />
+				<input name='name' type="text" placeholder="Enter Your Name"  />
 			</label>
 			<label className="block">
 				<span className="mb-1">Email address</span>
-				<input type="email" name='email' placeholder="Enter Your Email" className="block w-full rounded-md shadow-md outline-none dark:bg-coolGray-800"required/>
+				<input type="email" name='email' placeholder="Enter Your Email" />
 			</label>
 			<label className="block">
 				<span className="mb-1">Message</span>
-				<textarea  rows="3"  className="block w-full rounded-md ring ring-gray-300 dark:bg-coolGray-800"></textarea>
+				<textarea  rows="3"  ></textarea>
 			</label>
 			<button type="button" className="self-center px-8 py-3 text-lg bg-blue-400 rounded-lg resize-none focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-400 dark:text-coolGray-900 focus:ring-violet-400 hover:ring-violet-400">Submit</button>
-		</form>
+		</form> */}
+		<ContactForm />
 	</div>
 </section>
     )

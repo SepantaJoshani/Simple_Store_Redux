@@ -1,19 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-    margin: 0;
-    box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 @layer base {
-    
-    
-    textarea{
-        @apply resize-none
-    }
+  textarea {
+    @apply block w-full rounded-md outline-none resize-none ring ring-gray-300 ;
+  }
 
-    input{
-        @apply outline-none 
-    }
+  input {
+    @apply block w-full rounded-md shadow-md outline-none;
+  }
 }
