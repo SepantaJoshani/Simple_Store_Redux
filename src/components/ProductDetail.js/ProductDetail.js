@@ -6,7 +6,7 @@ const ProductDetail = ({name,description,price,image}) => {
         <section className="overflow-hidden text-gray-600 body-font lg:py-44">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap mx-auto lg:w-auto">
-            <img alt="ecommerce" className="object-cover object-center w-full rounded h-80 lg:w-1/2" src={image}/>
+            <img alt="ecommerce" className="object-cover object-center w-full h-auto rounded lg:w-1/2" src={image}/>
             <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
               <h2 className="text-sm tracking-widest text-gray-500 title-font lg:text-lg">BRAND NAME</h2>
               <h1 className="mb-1 text-3xl font-medium text-gray-900 title-font lg:text-4xl">{name}</h1>
@@ -56,20 +56,7 @@ const ProductDetail = ({name,description,price,image}) => {
                   <button className="w-6 h-6 ml-1 bg-indigo-500 border-2 border-gray-300 rounded-full focus:outline-none"></button>
                 </div>
                 <div className="flex items-center ml-6">
-                  <span className="mr-3">Size</span>
-                  <div className="relative">
-                    <select className="py-2 pl-3 pr-10 text-base border border-gray-300 rounded appearance-none focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500">
-                      <option>SM</option>
-                      <option>M</option>
-                      <option>L</option>
-                      <option>XL</option>
-                    </select>
-                    <span className="absolute top-0 right-0 flex items-center justify-center w-10 h-full text-center text-gray-600 pointer-events-none">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4" viewBox="0 0 24 24">
-                        <path d="M6 9l6 6 6-6"></path>
-                      </svg>
-                    </span>
-                  </div>
+                 
                 </div>
               </div>
               <div className="flex">

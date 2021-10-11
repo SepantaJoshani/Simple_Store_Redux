@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Route, useRouteMatch } from "react-router";
+import { useRouteMatch } from "react-router";
 import ProductDetail from "../components/ProductDetail.js/ProductDetail";
 import products from "../products";
 const ProductInfo = () => {

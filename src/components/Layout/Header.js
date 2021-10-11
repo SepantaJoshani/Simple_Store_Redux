@@ -29,7 +29,7 @@ const Header = () => {
           </div>
         </div>
         <div>
-          <Link to="products">
+          <Link to="/products">
             <div className="flex items-center space-x-1">
               <ShoppingBag />
               <h1 className="text-xl">Store</h1>
