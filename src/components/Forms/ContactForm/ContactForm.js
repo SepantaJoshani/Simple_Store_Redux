@@ -26,7 +26,7 @@ const ContactForm = () => {
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={onSubmit}
-      validateOnMount
+     
     >
       {formik => 
         <Form  className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid focus:outline-none" >
@@ -54,7 +54,8 @@ const ContactForm = () => {
           <button
             type="submit"
             className="self-center px-8 py-3 text-lg bg-blue-400 rounded-lg resize-none focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-400 dark:text-coolGray-900 focus:ring-violet-400 hover:ring-violet-400"
-          >
+          disabled={!formik.isValid}
+         >
             Submit
           </button>
         </Form>

@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react'
-import { Route } from 'react-router'
+import { Route, useHistory } from 'react-router'
 import CartItem from '../components/CartItem/CartItem'
 import InstaIcon from '../components/Icons/InstaIcon'
 import products from '../products'
 
 const Cart = () => {
+
+    const history=useHistory()
     
     return (
         <Fragment>
@@ -24,10 +26,10 @@ const Cart = () => {
 		<p className="text-sm dark:text-coolGray-400">Not including taxes and shipping costs</p>
 	</div>
 	<div className="flex justify-end space-x-4 sm:mx-auto md:space-x-9">
-		<button type="button" className="px-6 py-2 bg-blue-400 border rounded-md dark:border-violet-400">Back
+		<button type="button"  onClick={()=>history.push('/products')} className="px-6 py-2 bg-blue-400 border rounded-md dark:border-violet-400">Back
 			<span className="sr-only sm:not-sr-only">to shop</span>
 		</button>
-		<button type="button" className="px-6 py-2 bg-blue-400 border rounded-md dark:bg-violet-400 dark:text-coolGray-900 dark:border-violet-400">
+		<button type="button" onClick={()=>history.push('/checkout')} className="px-6 py-2 bg-blue-400 border rounded-md dark:bg-violet-400 dark:text-coolGray-900 dark:border-violet-400">
 			<span className="sr-only sm:not-sr-only">Continue to</span>Checkout
 		</button>
 	</div>

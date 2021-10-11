@@ -14,4 +14,16 @@
   input {
     @apply block w-full rounded-md shadow-md outline-none;
   }
+
+  button:disabled{
+    @apply bg-blue-300
+  }
+
+  select{
+    @apply block min-w-full px-3 py-2 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm
+  }
+
+  label{
+    @apply block text-sm font-medium text-gray-700
+  }
 }
