@@ -7,7 +7,7 @@ import PhoneIcon from '../components/Icons/PhoneIcon'
 
 const Contact = () => {
     return (
-        <section className="py-40 dark:bg-coolGray-800 dark:text-coolGray-50">
+        <section className="py-40 lg:py-44 xl:py-48 dark:bg-coolGray-800 dark:text-coolGray-50">
 	<div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x md:divide-blue-400">
 		<div className="py-6 md:py-0 md:px-6">
 			<h1 className="text-4xl font-bold">Get in touch</h1>

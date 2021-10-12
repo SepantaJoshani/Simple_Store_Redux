@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import CartIcon from "../Icons/CartIcon";
 import CloseIcon from "../Icons/CloseIcon";
@@ -7,7 +8,9 @@ import MenuItem from "../Icons/MenuItem";
 import ShoppingBag from "../Icons/ShoppingBag";
 import UserIcon from "../Icons/UserIcon";
 
+
 const Header = () => {
+  const cartQun = useSelector(state => state.cart.totalQuantity)
   const [isOpen, setIsOpen] = useState(true);
   const toggleHandler = () => {
     setIsOpen((prevState) => !prevState);
@@ -46,7 +49,7 @@ const Header = () => {
                 <CartIcon />
               </div>
               <span class="inline-flex items-center justify-center px-2 py-1  text-xs font-bold leading-none text-gray-600 bg-white rounded-full absolute top-1 bottom-6 right-2 z-100">
-                9
+                {cartQun}
               </span>
             </div>
           </NavLink>

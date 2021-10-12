@@ -17,6 +17,7 @@ const ProductInfo = () => {
         price={product.price}
         description={product.description}
         image={product.image}
+        id={product.id}
       />
     </Fragment>
   );
