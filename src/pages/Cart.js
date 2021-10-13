@@ -9,6 +9,7 @@ const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
   const totalAmount = useSelector(state => state.cart.totalAmount)
   const fixedTA=totalAmount.toFixed(2)
+
   
   const history = useHistory();
 
@@ -19,6 +20,7 @@ const Cart = () => {
         <ul className="flex flex-col divide-y divide-coolGray-700">
           {cartItems.map((product) => (
             <CartItem
+              key={product.id}
               id={product.id}
               price={product.price}
               name={product.name}

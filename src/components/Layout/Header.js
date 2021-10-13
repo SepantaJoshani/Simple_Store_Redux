@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import CartIcon from "../Icons/CartIcon";
 import CloseIcon from "../Icons/CloseIcon";
-import LogoutIcon from "../Icons/LogoutIcon";
 import MenuItem from "../Icons/MenuItem";
 import ShoppingBag from "../Icons/ShoppingBag";
 import UserIcon from "../Icons/UserIcon";

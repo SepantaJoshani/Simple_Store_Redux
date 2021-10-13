@@ -1,18 +1,24 @@
 import React from "react";
 import { useDispatch } from "react-redux";
+import { useToasts } from "react-toast-notifications";
 import { cartActions } from "../../store/cartSlice";
 
-const ProductDetail = ({ name, description, price, image,id }) => {
+const ProductDetail = ({ name, description, price, image, id }) => {
   const dispatch = useDispatch();
+  const { addToast } = useToasts();
   const addItemHandler = () => {
     dispatch(
       cartActions.addItemToCart({
         name,
         price,
         image,
-        id
+        id,
       })
     );
+    addToast("Added Successfully", {
+      appearance: "success",
+      autoDismiss: true,
+    });
   };
 
   const priceItem = price.toFixed(2);
@@ -92,7 +98,7 @@ const ProductDetail = ({ name, description, price, image,id }) => {
                 <span className="ml-3 text-gray-600">4 Reviews</span>
               </span>
               <span className="flex py-2 pl-3 ml-3 border-l-2 border-gray-200 space-x-2s">
-                <a className="text-gray-500">
+                <a  className="text-gray-500">
                   <svg
                     fill="currentColor"
                     stroke-linecap="round"

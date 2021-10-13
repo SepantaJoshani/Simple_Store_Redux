@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import ProductItem from "../components/ProductsItem/ProductItem";
 import products from "../products";
 import Stats from '../components/stats/Stats'
-import SearchIcon from "../components/Icons/SearchIcon";
 const Products = () => {
   return (
    <Fragment>

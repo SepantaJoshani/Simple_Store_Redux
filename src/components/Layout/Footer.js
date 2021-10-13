@@ -7,7 +7,7 @@ import InstaIcon from '../Icons/InstaIcon'
 
 const Footer = () => {
   return (
-    <footer className="px-4 bg-blue-400 divide-y  dark:bg-coolGray-800 dark:text-coolGray-100">
+    <footer className="px-4 bg-blue-400 divide-y dark:bg-coolGray-800 dark:text-coolGray-100">
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
         <div className="lg:w-1/3">
           <Link
@@ -29,16 +29,16 @@ const Footer = () => {
             </h3>
             <ul className="space-y-1">
               <li>
-                <a href="/">Features</a>
+                <a href="#">Features</a>
               </li>
               <li>
-                <a href="/">Integrations</a>
+                <a href='#'>Integrations</a>
               </li>
               <li>
-                <a href="/">Pricing</a>
+                <a href='#'>Pricing</a>
               </li>
               <li>
-                <a href="/">FAQ</a>
+                <a href='#'>FAQ</a>
               </li>
             </ul>
           </div>
@@ -48,10 +48,10 @@ const Footer = () => {
             </h3>
             <ul className="space-y-1">
               <li>
-                <a href="/">Privacy</a>
+                <a href='#'>Privacy</a>
               </li>
               <li>
-                <a href="/">Terms of Service</a>
+                <a href='#'>Terms of Service</a>
               </li>
             </ul>
           </div>
@@ -59,13 +59,13 @@ const Footer = () => {
             <h3 className="uppercase dark:text-coolGray-50">Developers</h3>
             <ul className="space-y-1">
               <li>
-                <a href="/">Public API</a>
+                <a href='#'>Public API</a>
               </li>
               <li>
-                <a href="/">Documentation</a>
+                <a href='#'>Documentation</a>
               </li>
               <li>
-                <a href="/">Guides</a>
+                <a href='#'>Guides</a>
               </li>
             </ul>
           </div>

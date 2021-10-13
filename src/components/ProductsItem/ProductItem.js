@@ -1,10 +1,11 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router";
-
 import { cartActions } from "../../store/cartSlice";
+import { useToasts } from "react-toast-notifications";
 
 const ProductItem = ({ name, description, price, image, id }) => {
+  const { addToast } = useToasts();
   const dispatch = useDispatch();
   const history = useHistory();
   const addToCartHandler = () => {
@@ -16,6 +17,7 @@ const ProductItem = ({ name, description, price, image, id }) => {
         image,
       })
     );
+    addToast("Added Successfully", { appearance: "success",autoDismiss:true });
   };
 
   const pushHandler = () => {

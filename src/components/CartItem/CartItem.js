@@ -1,12 +1,14 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router";
+import { useToasts } from "react-toast-notifications";
 import { cartActions } from "../../store/cartSlice";
 import MinusIcon from "../Icons/MinusIcon";
 import PlusIcon from "../Icons/PlusIcon";
 import RemoveIcon from "../Icons/RemoveIcon";
 
 const CartItem = ({ name, image, price, id }) => {
+  const{addToast}=useToasts()
   const dispatch = useDispatch();
   const cartItems = useSelector(state => state.cart.items)
   const history = useHistory();
@@ -24,14 +26,17 @@ const CartItem = ({ name, image, price, id }) => {
         quantity
       })
     );
+    addToast("Added Successfully", { appearance: "success",autoDismiss:true, });
   };
 const priceItem=price.toFixed(2)
   const removeItemHandler = ()=>{
     dispatch(cartActions.removeItemFromCart(id))
+    addToast("Removed Successfully", { appearance: "success",autoDismiss:true, });
   }
 
   const removeHandler=()=>{
     dispatch(cartActions.clearItem(id))
+    addToast("Erased Successfully", { appearance: "success",autoDismiss:true, });
   }
 
   const pushHandler = () => {
