@@ -12,19 +12,15 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { cartActions } from "./store/cartSlice";
 
-
-
-
 function App() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const [products, setProducts] = useState(() => {
-    
     const saved = localStorage.getItem("products");
     const initialValue = JSON.parse(saved);
-    return initialValue || "";
+    return initialValue || { items: [], totalQuantity: 0, totalAmount: 0 };
   });
   const cart = useSelector((state) => state.cart);
-  
+
   useEffect(() => {
     localStorage.setItem("products", JSON.stringify(cart));
   }, [cart]);
@@ -37,7 +33,7 @@ function App() {
         totalAmount: products.totalAmount,
       })
     );
-  }, [dispatch,products]);
+  }, [dispatch, products]);
 
   return (
     <Layout>

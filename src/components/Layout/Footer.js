@@ -29,16 +29,16 @@ const Footer = () => {
             </h3>
             <ul className="space-y-1">
               <li>
-                <a href="#">Features</a>
+                <Link to="/">Features</Link>
               </li>
               <li>
-                <a href='#'>Integrations</a>
+                <Link to='/'>Integrations</Link>
               </li>
               <li>
-                <a href='#'>Pricing</a>
+                <Link to='/'>Pricing</Link>
               </li>
               <li>
-                <a href='#'>FAQ</a>
+                <Link to='/'>FAQ</Link>
               </li>
             </ul>
           </div>
@@ -48,10 +48,10 @@ const Footer = () => {
             </h3>
             <ul className="space-y-1">
               <li>
-                <a href='#'>Privacy</a>
+                <Link to='/'>Privacy</Link>
               </li>
               <li>
-                <a href='#'>Terms of Service</a>
+                <Link to='/'>Terms of Service</Link>
               </li>
             </ul>
           </div>
@@ -59,46 +59,46 @@ const Footer = () => {
             <h3 className="uppercase dark:text-coolGray-50">Developers</h3>
             <ul className="space-y-1">
               <li>
-                <a href='#'>Public API</a>
+                <Link to='/'>Public API</Link>
               </li>
               <li>
-                <a href='#'>Documentation</a>
+                <Link to='/'>Documentation</Link>
               </li>
               <li>
-                <a href='#'>Guides</a>
+                <Link to='/'>Guides</Link>
               </li>
             </ul>
           </div>
           <div className="space-y-3">
             <div className="uppercase dark:text-coolGray-50">Social media</div>
             <div className="flex justify-start space-x-3">
-              <a
-                href="https://github.com/SepantaJoshani"
+              <Link
+                to="https://github.com/SepantaJoshani"
                 rel='noreferrer'
                 target="_blank"
                 title="github"
                 className="flex items-center p-1"
               >
                 <GithubIcon />
-              </a>
-              <a
-                href="https://twitter.com/SepantaJoshani"
+              </Link>
+              <Link
+                to="https://twitter.com/SepantaJoshani"
                 rel='noreferrer'
                 target="_blank"
                 title="Twitter"
                 className="flex items-center p-1"
               >
                 <TwitterIcon />
-              </a>
-              <a
-                href="https://www.instagram.com/sepanta__joshani/"
+              </Link>
+              <Link
+                to="https://www.instagram.com/sepanta__joshani/"
                 rel='noreferrer'
                 target="_blank"
                 title="Instagram"
                 className="flex items-center p-1"
               >
                <InstaIcon />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

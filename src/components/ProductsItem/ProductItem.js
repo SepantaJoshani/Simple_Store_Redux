@@ -17,7 +17,7 @@ const ProductItem = ({ name, description, price, image, id }) => {
         image,
       })
     );
-    addToast("Added Successfully", { appearance: "success",autoDismiss:true });
+    addToast("Added Successfully", { appearance: "success",autoDismiss:true, });
   };
 
   const pushHandler = () => {
