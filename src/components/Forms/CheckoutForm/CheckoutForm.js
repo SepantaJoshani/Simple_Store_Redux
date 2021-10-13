@@ -8,7 +8,6 @@ const CheckoutForm = () => {
     { key: "Select a region", value: "" },
     { key: "United States", value: "unitedState" },
     { key: "Canada", value: "canada" },
-   
   ];
 
   const initialValues = {
@@ -16,7 +15,6 @@ const CheckoutForm = () => {
     lastName: "",
     email: "",
     selectCountries: "",
-    country: "",
     streetAddress: "",
     city: "",
     state: "",
@@ -27,8 +25,6 @@ const CheckoutForm = () => {
     lastName: Yup.string().required("Required"),
     email: Yup.string().email("Invalid Email").required("Required"),
     selectCountries: Yup.string().required("Required"),
-    message: Yup.string().required("Required"),
-    country: Yup.string().required("Required"),
     streetAddress: Yup.string().required("Required"),
     city: Yup.string().required("Required"),
     state: Yup.string().required("Required"),
@@ -40,16 +36,13 @@ const CheckoutForm = () => {
     console.log(submitProps);
     submitProps.resetForm();
   };
-
   return (
-    
     <Formik
-      validationSchema={validationSchema}
       initialValues={initialValues}
+      validationSchema={validationSchema}
       onSubmit={onSubmit}
     >
       {(formik) => (
-      
         <Form>
           <div className="overflow-hidden shadow sm:rounded-md">
             <div className="px-4 py-5 bg-white sm:p-6">
@@ -85,7 +78,6 @@ const CheckoutForm = () => {
                   options={countryOptions}
                   name="selectCountries"
                   label="Country / Region"
-                  
                 />
 
                 <FormikControl
@@ -117,7 +109,7 @@ const CheckoutForm = () => {
 
                 <FormikControl
                   control="input"
-                  type="number"
+                  type="text"
                   name="zip"
                   label="Zip/Postal"
                   className="col-span-6 sm:col-span-3 lg:col-span-2"
@@ -127,7 +119,7 @@ const CheckoutForm = () => {
             </div>
             <div className="px-4 py-3 text-right bg-gray-50 sm:px-6">
               <button
-              disabled={!formik.isValid}
+                disabled={!formik.isValid}
                 type="submit"
                 className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-blue-400 border border-transparent rounded-md shadow-sm hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
@@ -136,12 +128,8 @@ const CheckoutForm = () => {
             </div>
           </div>
         </Form>
-       
-       
       )}
-      
     </Formik>
-    
   );
 };
 

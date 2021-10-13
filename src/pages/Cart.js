@@ -48,11 +48,12 @@ const Cart = () => {
             <span className="sr-only sm:not-sr-only">to shop</span>
           </button>
           <button
+          disabled={cartItems.length===0}
             type="button"
             onClick={() => history.push("/checkout")}
             className="px-6 py-2 bg-blue-400 border rounded-md dark:bg-violet-400 dark:text-coolGray-900 dark:border-violet-400"
           >
-            <span className="sr-only sm:not-sr-only">Continue to</span>Checkout
+            <span  className="sr-only sm:not-sr-only">Continue to</span>Checkout
           </button>
         </div>
       </div>
