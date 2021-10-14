@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
+import { uiActions } from "../../store/ui-slice";
 import CartIcon from "../Icons/CartIcon";
 import CloseIcon from "../Icons/CloseIcon";
 import MenuItem from "../Icons/MenuItem";
 import SearchIcon from "../Icons/SearchIcon";
 import ShoppingBag from "../Icons/ShoppingBag";
-import UserIcon from "../Icons/UserIcon";
+
 
 
 const Header = () => {
@@ -15,6 +16,10 @@ const Header = () => {
   const toggleHandler = () => {
     setIsOpen((prevState) => !prevState);
   };
+  const dispatch = useDispatch()
+  const showSearchHandler=()=>{
+    dispatch(uiActions.toggle())
+  }
   return (
     <header className="bg-blue-400 ">
       <div className="flex items-center justify-between px-3 py-3">
@@ -40,9 +45,9 @@ const Header = () => {
           </Link>
         </div>
         <div className="flex items-center space-x-1">
-          <NavLink to="/contact">
-            <SearchIcon />
-          </NavLink>
+          
+            <SearchIcon click={showSearchHandler}/>
+          
           <NavLink to="/cart">
             <div className="relative px-5 py-2">
               <div className="z-0 ">
