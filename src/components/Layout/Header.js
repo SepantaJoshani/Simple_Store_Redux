@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import CartIcon from "../Icons/CartIcon";
 import CloseIcon from "../Icons/CloseIcon";
 import MenuItem from "../Icons/MenuItem";
+import SearchIcon from "../Icons/SearchIcon";
 import ShoppingBag from "../Icons/ShoppingBag";
 import UserIcon from "../Icons/UserIcon";
 
@@ -40,7 +41,7 @@ const Header = () => {
         </div>
         <div className="flex items-center space-x-1">
           <NavLink to="/contact">
-            <UserIcon />
+            <SearchIcon />
           </NavLink>
           <NavLink to="/cart">
             <div className="relative px-5 py-2">

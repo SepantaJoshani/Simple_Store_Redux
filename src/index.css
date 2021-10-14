@@ -6,13 +6,15 @@
   box-sizing: border-box;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+
 @layer base {
   textarea {
     @apply block w-full rounded-md outline-none resize-none ring ring-gray-300 ;
   }
 
   input {
-    @apply block w-full rounded-md shadow-md outline-none;
+    @apply block w-full border-2 border-gray-300 rounded-md outline-none;
   }
 
   button:disabled{
