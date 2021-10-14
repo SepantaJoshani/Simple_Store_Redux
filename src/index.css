@@ -14,6 +14,7 @@
     src: url(./assets/fonts/Ephesis-Regular.ttf) format("​truetype​");
   }
 
+
   textarea {
     @apply block w-full rounded-md outline-none resize-none ring ring-gray-300;
   }

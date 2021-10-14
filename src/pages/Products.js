@@ -10,11 +10,11 @@ const Products = () => {
 
   return (
     <Fragment>
-      <section className="py-5 text-gray-600 body-font">
+      <section className="min-h-screen py-5 text-gray-600 body-font">
         {showSearch && (
           <div className="flex flex-row h-20 p-4 place-content-center">
             <input
-              className="w-40 h-8"
+              className="w-40 h-8 sm:w-52 lg:w-72 searchnp"
               placeholder="search..."
               type="text"
               value={search}
